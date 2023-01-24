@@ -1,4 +1,10 @@
 export class Point {
+  x: number;
+  y: number;
+  fixedY: number;
+  speed: number;
+  cur: number;
+  max: number;
   // 일정간격을 가진 좌표들을 하나씩 만들어서
   // 좌표 값의 y를 아래위로 움직이고 각각의 y를 이어주는 선을 만든다
   constructor(index, x, y) {

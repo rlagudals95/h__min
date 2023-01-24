@@ -1,6 +1,19 @@
 import { Point } from "./point.js";
 
+interface Coordinate {
+  x: number;
+  y: number;
+}
 export class Wave {
+  index: number;
+  totalPoints: number;
+  color: string;
+  points: Point[];
+  stageWidth: number;
+  stageHeight: number;
+  centerX: number;
+  centerY: number;
+  pointGap: number;
   // 애니메이션을 만들때 중요한 것은 그리고자 하는 애니메이션의 좌표값을 가지고 오는 것입니다~!
   constructor(index, totalPoints, color) {
     // index로 웨이브를 구분해 움직임에 차이를 준다.

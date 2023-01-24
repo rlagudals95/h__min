@@ -1,5 +1,9 @@
 import { Wave } from "./wave.js";
 export class WaveGroup {
+  totalWaves: number;
+  totalPoints: number;
+  color: string[];
+  waves: Wave[];
   constructor() {
     this.totalWaves = 3;
     this.totalPoints = 6;
